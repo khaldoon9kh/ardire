@@ -5,13 +5,13 @@ import './index.css';
 const NavBar = () => {
     return (
         <div className='navbarCont'>
-            <div className="logo">
+            <div className="logoCont">
                 <img src={Logo} alt="Logo" className='logoImg' />
             </div>
             <div className="nav-items">
-                <div>Highlights</div>
-                <div>Jewellery</div>
-                <div>About Us</div>
+                <div>HIGHLIGHTS</div>
+                <div>JEWELLERY</div>
+                <div>ABOUT US</div>
             </div>
         </div>
     );
