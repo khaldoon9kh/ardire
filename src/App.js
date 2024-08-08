@@ -1,13 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './containers/NavBar/index.jsx'; 
-import LandingPage from './containers/LandingPage/index.jsx';  
+import HomePage from './containers/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <LandingPage />
+      <HomePage />
     </div>
   );
 }
