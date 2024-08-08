@@ -1,0 +1,12 @@
+.navbarCont{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px 18px 0px;
+    background-color: #f8f9fa;
+
+}
+
+
+.logoImg {
+    width: 200px;
+}
