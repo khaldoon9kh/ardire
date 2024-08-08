@@ -9,19 +9,19 @@ const CatSection = () => {
     const catItems = [
         {
             img: Earings,
-            title: 'Earings'
+            title: 'EARINGS'
         },
         {
             img: Bracelets,
-            title: 'Bracelets'
+            title: 'BRACELETS'
         },
         {
             img: Rings,
-            title: 'Rings'
+            title: 'RINGS'
         },
         {
             img: Necklaces,
-            title: 'Necklaces'
+            title: 'NECKLACES'
         }
     ];
     return (
