@@ -1,29 +1,32 @@
 import React from 'react';
 import './index.css';
-import AboutUsImg from "../../imgs/aboutUs.webp"
+import Bell from '../../svgs/hotelBell.svg';
+import Shipping from '../../svgs/shipping.svg';
+import Card from '../../svgs/secureCard.svg';
 
 const FeaturesSec = () => {
     return (
         <div className="features-section">
             <div className="feature-cell">
-                <div className="icon">Icon 1</div>
-                <h3>Title 1</h3>
-                <p>Paragraph 1</p>
+                <div className="icon">
+                    <img src={Bell} alt="Bell Icon" />
+                </div>
+                <h3>At Your Service</h3>
+                <p>Our client care expert are always here to help.</p>
             </div>
             <div className="feature-cell">
-                <div className="icon">Icon 2</div>
-                <h3>Title 2</h3>
-                <p>Paragraph 2</p>
+                <div className="icon">
+                    <img src={Shipping} alt="Shipping Icon" />
+                </div>
+                <h3>Complimentary Shipping</h3>
+                <p>We offer complimentary shipping to your address.</p>
             </div>
             <div className="feature-cell">
-                <div className="icon">Icon 3</div>
-                <h3>Title 3</h3>
-                <p>Paragraph 3</p>
-            </div>
-            <div className="feature-cell">
-                <div className="icon">Icon 4</div>
-                <h3>Title 4</h3>
-                <p>Paragraph 4</p>
+                <div className="icon">
+                    <img src={Card} alt="Card Icon" />
+                </div>
+                <h3>Secure Payment</h3>
+                <p>Your payment is secured with us.</p>
             </div>
         </div>
     );
