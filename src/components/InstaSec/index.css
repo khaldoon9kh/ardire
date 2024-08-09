@@ -1,0 +1,52 @@
+.InstaSec{
+    margin: 20px 0px;
+    padding: 10px 0px;
+    /* background-color: #f8f8f8; */
+    
+}
+.catHeaderCont{
+    font-family: 'CustomFont', sans-serif;
+}
+
+.catHeaderCont h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.catHeaderCont p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.instaslideCont{
+    /* width: 90%; */
+    margin: 0 auto;
+    /* background-color: #f8f8f8; */
+}
+
+.instaslideCont img{
+    width: 250px;
+    height: 250px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    /* margin: 0px 10px; */
+    color: black;
+}
+
+/* .swiper-button-next{
+    right: 0px;
+}
+.swiper-button-prev{
+    left: 0px;
+} */
+
+.slideCont p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0px;
+    font-family: 'CustomFont', sans-serif;
+}
