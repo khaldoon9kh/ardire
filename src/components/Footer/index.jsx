@@ -3,6 +3,7 @@ import './index.css';
 import Instagram from '../../svgs/instagram.svg';
 import Facebook from '../../svgs/facebook.svg';
 import Twitter from '../../svgs/twitter.svg';
+import Logo from '../../imgs/logo.png';
 
 const Footer = () => {
     return (
@@ -60,6 +61,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
+                <img src={Logo} alt="Instagram Icon" />
                 <p>© 2024, All rights reserved</p>
             </div>
         </div>

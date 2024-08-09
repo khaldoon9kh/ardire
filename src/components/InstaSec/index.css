@@ -1,6 +1,7 @@
 .InstaSec{
     margin: 20px 0px;
     padding: 10px 0px;
+    font-family: 'CustomFont', sans-serif;
     /* background-color: #f8f8f8; */
     
 }
@@ -24,6 +25,7 @@
 .instaslideCont{
     /* width: 90%; */
     margin: 0 auto;
+    font-size: 1.5rem;
     /* background-color: #f8f8f8; */
 }
 
