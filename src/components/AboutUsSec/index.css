@@ -1,0 +1,21 @@
+.aboutUSCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'CustomFont', sans-serif;
+}
+
+.aboutUsText{
+    flex:2;
+    padding: 0px 20px;
+}
+
+.aboutUsImg{
+    flex:4
+}
+
+.aboutUsImg img{
+    width: 100%;
+    height: auto;
+
+}
