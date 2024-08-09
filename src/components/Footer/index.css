@@ -1,0 +1,30 @@
+.footer-section{
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 02px;
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+
+.feature-cell{
+    flex:2
+}
+
+.icon img{
+    height: 30px;
+}
+
+.socialCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialIconsCont{
+    display: flex;
+}
+
+.socialCont img{
+    height: 35px;
+}

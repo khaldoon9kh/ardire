@@ -1,0 +1,17 @@
+.features-section{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'CustomFont', sans-serif;
+    margin: 20px 0px;
+    background-color: rgb(244, 240, 238);
+    padding: 20px 0px;
+}
+
+.feature-cell{
+    flex:2
+}
+
+.icon img{
+    height: 30px;
+}
