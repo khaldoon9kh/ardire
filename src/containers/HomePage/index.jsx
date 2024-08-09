@@ -6,6 +6,7 @@ import HighlightSec from '../../components/HighlightSec/index.jsx';
 import AboutUsSec from '../../components/AboutUsSec/index.jsx';
 import InstaSec from '../../components/InstaSec/index.jsx';
 import FeaturesSec from '../../components/FeaturesSec/index.jsx';
+import Footer from '../../components/Footer/index.jsx';
 
 const HomePage = () => {
     return (
@@ -17,6 +18,7 @@ const HomePage = () => {
                 <AboutUsSec />
                 <InstaSec />
                 <FeaturesSec />
+                <Footer />
             </div>
         );
 };
