@@ -5,6 +5,7 @@ import CatSection from '../../components/CatSection/index.jsx';
 import HighlightSec from '../../components/HighlightSec/index.jsx';
 import AboutUsSec from '../../components/AboutUsSec/index.jsx';
 import InstaSec from '../../components/InstaSec/index.jsx';
+import FeaturesSec from '../../components/FeaturesSec/index.jsx';
 
 const HomePage = () => {
     return (
@@ -15,6 +16,7 @@ const HomePage = () => {
                 <HighlightSec />
                 <AboutUsSec />
                 <InstaSec />
+                <FeaturesSec />
             </div>
         );
 };

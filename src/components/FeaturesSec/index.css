@@ -1,0 +1,9 @@
+.features-section{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'CustomFont', sans-serif;
+    margin: 20px 0px;
+    background-color: #f8f8f8f8;
+    padding: 20px 0px;
+}
