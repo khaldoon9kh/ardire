@@ -61,7 +61,7 @@ const HighlightSec = () => {
     ]
 
     return (
-        <div className='categorySec'>
+        <div className='highlightSec'>
             <div className='catHeaderCont'>
                 <h1>The Ardire Icons</h1>
                 <p>Modern jewels that defy the decades</p>
