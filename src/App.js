@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from './containers/HomePage';
+import ProductPage from './containers/ProductPage';
 // import Root from "./routes/root";
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       element: <HomePage />,
     },
     {
-      path: "/hello",
-      element: <div>Hello world!</div>,
+      path: "/product",
+      element: <ProductPage/>,
     },
   ]);
 
