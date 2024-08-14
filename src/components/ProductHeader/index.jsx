@@ -1,9 +1,10 @@
 import React from 'react';
 import './index.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation,Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import FeaturesSec from '../FeaturesSec/index.jsx';
 import iconicEarings1 from "../../imgs/iconicEarings.png";
 import iconicEarings2 from '../../imgs/iconicEarings2.webp';
@@ -87,6 +88,7 @@ const ProductHeader = () => {
                 slidesPerView={2}
                 spaceBetween={10}
                 loop={true}
+                // pagination={{ clickable: true }}
                 >
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
@@ -172,6 +174,7 @@ const ProductHeader = () => {
                     slidesPerView={3}
                     spaceBetween={50}
                     loop={true}
+                    
                     >
                         {youMayLikeSlides.map((slide, index) => (
                             <SwiperSlide key={index}>
@@ -187,9 +190,40 @@ const ProductHeader = () => {
         );
     }
 
+    const zoomInImg = () => {
+        return (
+            <div className='zoomInImgCont'>
+                <div className='zoomInHeader'>
+                    <p>X</p>
+                </div>
+                <div className='zoomInSwiper'>
+                    <Swiper 
+                    navigation={true} 
+                    modules={[Navigation]} 
+                    className="productSwiper"
+                    slidesPerView={1}
+                    loop={true}
+                    // pagination={{ clickable: true }}
+                    >
+                        {slides.map((slide, index) => (
+                            <SwiperSlide key={index}>
+                                <div className='prodSlideCont'>
+                                    <img src={slide.img} alt={slide.title} />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+        );
+    }
+
 
     return (
         <div className='prodHeaderCont'>
+            {/* <dialog open className='zoomImgDialog'>
+                {zoomInImg()}
+            </dialog> */}
             <div className='prodHeader'>
                 {productPic()}
                 {productInfo()}

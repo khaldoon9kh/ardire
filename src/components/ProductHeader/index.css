@@ -93,7 +93,7 @@
 }
 
 .prodDescCont{
-    background-color: #f8f8f8;
+    background-color: rgb(244, 240, 238);
     padding: 20px 0px;
 }
 .prodDes{
@@ -125,4 +125,10 @@
 .youMayLike{
     margin: 20px 0px;
     padding: 10px 0px;
+}
+
+.zoomImgDialog{
+    width: 100vw;
+    height: 100vh;
+    background-color: saddlebrown;
 }
