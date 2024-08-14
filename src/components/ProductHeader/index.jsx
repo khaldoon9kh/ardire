@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './index.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation,Pagination } from 'swiper/modules';
@@ -20,6 +20,8 @@ import Earingsv2 from '../../imgs/Earingsv2.webp';
 
 
 const ProductHeader = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     const slides = [
         {
             img: iconicEarings1,
@@ -94,6 +96,14 @@ const ProductHeader = () => {
         };
     }, []);
 
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+
 
     const productPic = () => {
         return (
@@ -110,7 +120,11 @@ const ProductHeader = () => {
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
                             <div className='prodSlideCont'>
-                                <img src={slide.img} alt={slide.title} />
+                                <img 
+                                    src={slide.img} 
+                                    alt={slide.title} 
+                                    onClick={handleOpenModal}
+                                />
                                 {/* <p>{slide.title}</p> */}
                             </div>
                         </SwiperSlide>
@@ -207,20 +221,30 @@ const ProductHeader = () => {
         );
     }
 
+    // const handleCloseModal = () => {
+        
+    //     const dialog = document.querySelector('.zoomImgDialog');
+    //     dialog.close();
+    // }
+
     const zoomInImg = () => {
         return (
             <div className='zoomInImgCont'>
-                <div className='zoomInHeader'>
+                <div 
+                    className='zoomInHeader'
+                    onClick={handleCloseModal}
+                    
+                >
                     <p>X</p>
                 </div>
                 <div className='zoomInSwiper'>
                     <Swiper 
                     navigation={true} 
-                    modules={[Navigation]} 
+                    modules={[Navigation, Pagination]} 
                     className="productSwiper"
                     slidesPerView={1}
                     loop={true}
-                    // pagination={{ clickable: true }}
+                    pagination={{ clickable: true }}
                     >
                         {slides.map((slide, index) => (
                             <SwiperSlide key={index}>
@@ -238,9 +262,11 @@ const ProductHeader = () => {
 
     return (
         <div className='prodHeaderCont'>
-            <dialog open className='zoomImgDialog'>
-                {zoomInImg()}
-            </dialog>
+            {isModalOpen && (
+                <dialog className='zoomImgDialog' open>
+                    {zoomInImg()}
+                </dialog>
+            )}
             <div className='prodHeader'>
                 {productPic()}
                 {productInfo()}
