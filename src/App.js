@@ -6,9 +6,11 @@ import {
 } from "react-router-dom";
 import HomePage from './containers/HomePage';
 import ProductPage from './containers/ProductPage';
+import {useLanguageContext} from "./context/languageContext";
 // import Root from "./routes/root";
 
 function App() {
+  const { t } = useLanguageContext();
   const router = createBrowserRouter([
     {
       path: "/",

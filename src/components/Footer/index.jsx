@@ -1,11 +1,14 @@
 import React from 'react';
 import './index.css';
+import { useLanguageContext } from "../../context/languageContext";
 import Instagram from '../../svgs/instagram.svg';
 import Facebook from '../../svgs/facebook.svg';
 import Twitter from '../../svgs/twitter.svg';
 import Logo from '../../imgs/logo.png';
+import Earth from '../../svgs/earth.svg';
 
 const Footer = () => {
+    const { languages, onClickLanguageChange, t } = useLanguageContext();
     return (
         <div className='footerCont'>
             <div className="footer-section">
@@ -15,7 +18,7 @@ const Footer = () => {
                         <div className="item-title">FAQ</div>
                     </div>
                     <div className="item">
-                        <div className="item-title">Packaging</div>
+                        <div className="item-title">{t("line1")}</div>
                     </div>
                     <div className="item">
                         <div className="item-title">Size Guide</div>
@@ -57,6 +60,18 @@ const Footer = () => {
                     </div>
                     <div className="item">
                         <div className="item-title">Return Policy</div>
+                    </div>
+                    <div className="item langCont">
+                        <img src={Earth} alt="Earth Icon" />
+                        <select
+                            onChange={onClickLanguageChange}
+                        >
+                            {Object.keys(languages).map((lng) => (
+                                <option key={languages[lng].nativeName} value={lng}>
+                                {languages[lng].nativeName}
+                                </option>
+                            ))}
+                        </select>
                     </div>
                 </div>
             </div>
