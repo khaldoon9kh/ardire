@@ -7,6 +7,8 @@ import 'swiper/css/navigation';
 import iconicEarings1 from "../../imgs/iconicEarings.png";
 import iconicEarings2 from '../../imgs/iconicEarings2.webp';
 import iconicEarings3 from '../../imgs/iconicEarings3.webp';
+import descImage from '../../imgs/discriptionImg.webp';
+
 
 const ProductHeader = () => {
     const slides = [
@@ -61,7 +63,7 @@ const ProductHeader = () => {
                 <h1 className='prodTitle'>
                     Juste un Clou Ring
                 </h1>
-                <p className='prodDesc'>
+                <p className='prodDescP'>
                     Juste un Clou ring, white gold (750/1000), set with 77 brilliant-cut diamonds totaling 0.59 carat. Width: 1.8 mm (for size 52).
                 </p>
                 <p className='sizeLink'>Size Guide</p>
@@ -87,11 +89,38 @@ const ProductHeader = () => {
         );
     }
 
+    const productDesc = () => {
+        return (
+            <div className='prodDes'>
+                <div className='descTextCont'>
+                    <h1>Product Description</h1>
+                    <p>
+                        A trio of contrasting diamond flowers blossom upon our Wild Flower ring, arrayed in stylish asymmetry. Freed from tradition, the three different styles of flower bloom with a wild touch, unique down to each delicate diamond petal.
+                    </p>
+                    <p>
+                        The Wild Flower collection is an invitation to escape into a garden that grows just for you. From individual blooms to floral clusters and blossoms laid out in a row, each Wild Flower jewel is a statement of delicacy and of empowerment, designed to be worn in profusion.
+                    </p>
+                    <p>
+                        A joyful Wild Flower diamond ring with a total weight of approximately 0.86 carats.
+                    </p>
+                </div>
+                <div className='descImgCont'>
+                    <img src={descImage} alt='Description Image' />
+                </div>
+            </div>
+        );
+    }
+
 
     return (
         <div className='prodHeaderCont'>
-            {productPic()}
-            {productInfo()}
+            <div className='prodHeader'>
+                {productPic()}
+                {productInfo()}
+            </div>
+            <div className='prodDescCont'>
+                {productDesc()}
+            </div>
         </div>
     );
 };
