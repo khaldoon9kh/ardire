@@ -117,3 +117,12 @@
 .descImgCont img{
     width: 75%;
 }
+
+.youMayLikeItems{
+    padding: 10px 70px;
+}
+
+.youMayLike{
+    margin: 20px 0px;
+    padding: 10px 0px;
+}

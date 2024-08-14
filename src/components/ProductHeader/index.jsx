@@ -4,10 +4,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import FeaturesSec from '../FeaturesSec/index.jsx';
 import iconicEarings1 from "../../imgs/iconicEarings.png";
 import iconicEarings2 from '../../imgs/iconicEarings2.webp';
 import iconicEarings3 from '../../imgs/iconicEarings3.webp';
 import descImage from '../../imgs/discriptionImg.webp';
+import iconicNecklace1 from '../../imgs/iconicNecklace1.webp';
+import iconicNecklace2 from '../../imgs/iconicNecklace2.webp';
+import iconicNecklace3 from '../../imgs/iconicNecklace3.webp';
+import iconicRing1 from '../../imgs/iconicRing1.png';
+import iconicRing2 from '../../imgs/iconicRing2.webp';   
+import iconicRing3 from '../../imgs/iconicRing3.webp';
+import Earingsv2 from '../../imgs/Earingsv2.webp';
 
 
 const ProductHeader = () => {
@@ -26,11 +34,52 @@ const ProductHeader = () => {
         }
     ]
 
+    const youMayLikeSlides = [
+        {
+            img: iconicEarings1,
+            title: 'Iconic Earings',
+        },
+        {
+            img: iconicEarings2,
+            title: 'Iconic Earings',
+        },
+        {
+            img: iconicEarings3,
+            title: 'Iconic Earings',
+        },
+        {
+            img: iconicNecklace1,
+            title: 'Iconic Necklace',
+        },
+        {
+            img: iconicNecklace2,
+            title: 'Iconic Necklace',
+        },
+        {
+            img: iconicNecklace3,
+            title: 'Iconic Necklace',
+        },
+        {
+            img: iconicRing1,
+            title: 'Iconic Ring',
+        },
+        {
+            img: iconicRing2,
+            title: 'Iconic Ring',
+        },
+        {
+            img: iconicRing3,
+            title: 'Iconic Ring',
+        },
+        {
+            img: Earingsv2,
+            title: 'Iconic Earings',
+        },
+    ]
+
     const productPic = () => {
         return (
             <div className='prodpicCont'>
-                {/* <img src={iconicEarings1} alt='Iconic Earings' />
-                <img src={iconicEarings2} alt='Iconic Earings' /> */}
                 <Swiper 
                 navigation={true} 
                 modules={[Navigation]} 
@@ -38,16 +87,16 @@ const ProductHeader = () => {
                 slidesPerView={2}
                 spaceBetween={10}
                 loop={true}
-            >
-                {slides.map((slide, index) => (
-                    <SwiperSlide key={index}>
-                        <div className='prodSlideCont'>
-                            <img src={slide.img} alt={slide.title} />
-                            {/* <p>{slide.title}</p> */}
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                >
+                    {slides.map((slide, index) => (
+                        <SwiperSlide key={index}>
+                            <div className='prodSlideCont'>
+                                <img src={slide.img} alt={slide.title} />
+                                {/* <p>{slide.title}</p> */}
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         );
     }
@@ -111,6 +160,33 @@ const ProductHeader = () => {
         );
     }
 
+    const youMayLike = () => {
+        return (
+            <div className='youMayLikeCont'>
+                <h1>You May Also Like</h1>
+                <div className='youMayLikeItems'>
+                    <Swiper 
+                    navigation={true} 
+                    modules={[Navigation]} 
+                    className="productSwiper"
+                    slidesPerView={3}
+                    spaceBetween={50}
+                    loop={true}
+                    >
+                        {youMayLikeSlides.map((slide, index) => (
+                            <SwiperSlide key={index}>
+                                <div className='prodSlideCont'>
+                                    <img src={slide.img} alt={slide.title} />
+                                    <p>{slide.title}</p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </div>
+        );
+    }
+
 
     return (
         <div className='prodHeaderCont'>
@@ -121,6 +197,10 @@ const ProductHeader = () => {
             <div className='prodDescCont'>
                 {productDesc()}
             </div>
+            <div className='youMayLike'>
+                {youMayLike()}
+            </div>
+            <FeaturesSec />
         </div>
     );
 };
