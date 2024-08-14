@@ -90,6 +90,14 @@
     color: white;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCont img{
+    width: 30px;
+    margin-left: 10px;
 }
 
 .prodDescCont{

@@ -5,6 +5,7 @@ import { Navigation,Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import ShoppingBag from '../../svgs/shoppingBag.svg';
 import FeaturesSec from '../FeaturesSec/index.jsx';
 import iconicEarings1 from "../../imgs/iconicEarings.png";
 import iconicEarings2 from '../../imgs/iconicEarings2.webp';
@@ -169,7 +170,10 @@ const ProductHeader = () => {
                 </div>
                 <div className='btnCont'>
                     <button>
-                        Add to Cart
+                        <p>
+                            Add to Bag
+                        </p>
+                        <img src={ShoppingBag} alt='Shopping Bag' />
                     </button>
                 </div>
             </div>

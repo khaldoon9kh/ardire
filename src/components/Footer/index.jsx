@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className="item-title">FAQ</div>
                     </div>
                     <div className="item">
-                        <div className="item-title">{t("line1")}</div>
+                        <div className="item-title">Packaging</div>
                     </div>
                     <div className="item">
                         <div className="item-title">Size Guide</div>
