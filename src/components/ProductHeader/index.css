@@ -128,7 +128,15 @@
 }
 
 .zoomImgDialog{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
     width: 100vw;
     height: 100vh;
-    background-color: saddlebrown;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
 }

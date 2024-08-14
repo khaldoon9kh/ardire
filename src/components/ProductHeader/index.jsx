@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './index.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation,Pagination } from 'swiper/modules';
@@ -77,6 +77,23 @@ const ProductHeader = () => {
             title: 'Iconic Earings',
         },
     ]
+
+    useEffect(() => {
+        const handleScroll = (event) => {
+            event.preventDefault();
+        };
+
+        // Disable scrolling when the dialog is open
+        document.body.style.overflow = 'hidden';
+        window.addEventListener('scroll', handleScroll, { passive: false });
+
+        return () => {
+            // Re-enable scrolling when the dialog is closed
+            document.body.style.overflow = 'auto';
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     const productPic = () => {
         return (
@@ -207,7 +224,7 @@ const ProductHeader = () => {
                     >
                         {slides.map((slide, index) => (
                             <SwiperSlide key={index}>
-                                <div className='prodSlideCont'>
+                                <div className='zoomSlideCont'>
                                     <img src={slide.img} alt={slide.title} />
                                 </div>
                             </SwiperSlide>
@@ -221,9 +238,9 @@ const ProductHeader = () => {
 
     return (
         <div className='prodHeaderCont'>
-            {/* <dialog open className='zoomImgDialog'>
+            <dialog open className='zoomImgDialog'>
                 {zoomInImg()}
-            </dialog> */}
+            </dialog>
             <div className='prodHeader'>
                 {productPic()}
                 {productInfo()}
