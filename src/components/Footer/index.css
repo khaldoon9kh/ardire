@@ -8,7 +8,7 @@
     padding: 20px 0px;
 }
 
-.feature-cell{
+.footer-cell{
     flex:2
 }
 
@@ -23,6 +23,7 @@
 
 .socialIconsCont{
     display: flex;
+    justify-content: center
 }
 
 .socialCont img{
@@ -35,11 +36,12 @@
 
 .langCont{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 20px;
 
 }
 
 .langCont img{
     height: 20px;
+    margin-right: 10px;
 }
