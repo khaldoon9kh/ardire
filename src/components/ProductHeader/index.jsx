@@ -84,17 +84,22 @@ const ProductHeader = () => {
         const handleScroll = (event) => {
             event.preventDefault();
         };
-
-        // Disable scrolling when the dialog is open
-        document.body.style.overflow = 'hidden';
-        window.addEventListener('scroll', handleScroll, { passive: false });
-
-        return () => {
+    
+        if (isModalOpen) {
+            // Disable scrolling when the dialog is open
+            document.body.style.overflow = 'hidden';
+            window.addEventListener('scroll', handleScroll, { passive: false });
+        } else {
             // Re-enable scrolling when the dialog is closed
             document.body.style.overflow = 'auto';
             window.removeEventListener('scroll', handleScroll);
+        }
+    
+        return () => {
+            // Clean up the event listener when the component unmounts or isModalOpen changes
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isModalOpen]);
 
     const handleOpenModal = () => {
         setIsModalOpen(true);
