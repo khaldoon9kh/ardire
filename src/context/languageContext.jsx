@@ -10,7 +10,7 @@ export const LanguageContext = createContext(undefined);
 export const LanguageContextProvider = ({ children }) => {
 const languages = {
     en: { nativeName: "English" },
-    ru: { nativeName: "Russian" },
+    ru: { nativeName: "Русский" },
 };
 const { t, i18n } = useTranslation();
 
