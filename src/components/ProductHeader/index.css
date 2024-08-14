@@ -69,22 +69,22 @@
     font-family: 'CustomFont', sans-serif;
     text-align: center;
     padding: 5px 20px;
-    /* display: none; */
-    /* background-color: DodgerBlue; */
+    cursor: pointer;
 }
 
-/* .select-items {
-    background-color: DodgerBlue;
-  } */
+.btnCont{
+    width: 100%;
+    margin-top: 20px;
+}
 
-
-/* .selectSizeCont .select-selected{
-    flex: 4;
-    padding: 5px 20px;
-    border: 2px solid ;
-    border-radius: 0px;
-} */
-
-/* .selectSizeCont option{
-    color: red;
-} */
+.btnCont button{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'CustomFont', sans-serif;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
