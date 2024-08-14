@@ -2,19 +2,89 @@
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    background-color: blue;
+    font-family: 'CustomFont', sans-serif;
+    /* background-color: blue; */
 }
 
 .prodpicCont{
-    width: 50%;
+    width: 60%;
     flex:4;
 }
 
 .prodInfoCont{
-    flex:2;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+
+    flex:3;
+    padding: 0px 60px;
 } 
 
 .prodSlideCont img{
-    width: 50%;
+    width: 100%;
     /* height: 100%; */
 }
+
+.prodDesc{
+    text-align: left;
+}
+
+.sizeLink{
+    text-decoration-line: underline;
+
+}
+
+.sizeCont{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    /* height: 100%; */
+    /* background-color: blue; */
+
+}
+
+.priceCont{
+    flex: 2;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.priceCont p{
+    margin: 0px;
+}
+
+.selectSizeCont{
+    flex: 4;
+}
+
+.selectSizeCont select{
+    width: 100%;
+    border: 2px solid ;
+    border-radius: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'CustomFont', sans-serif;
+    text-align: center;
+    padding: 5px 20px;
+    /* display: none; */
+    /* background-color: DodgerBlue; */
+}
+
+/* .select-items {
+    background-color: DodgerBlue;
+  } */
+
+
+/* .selectSizeCont .select-selected{
+    flex: 4;
+    padding: 5px 20px;
+    border: 2px solid ;
+    border-radius: 0px;
+} */
+
+/* .selectSizeCont option{
+    color: red;
+} */

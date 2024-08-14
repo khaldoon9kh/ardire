@@ -41,7 +41,7 @@ const ProductHeader = () => {
                     <SwiperSlide key={index}>
                         <div className='prodSlideCont'>
                             <img src={slide.img} alt={slide.title} />
-                            <p>{slide.title}</p>
+                            {/* <p>{slide.title}</p> */}
                         </div>
                     </SwiperSlide>
                 ))}
@@ -53,9 +53,36 @@ const ProductHeader = () => {
     const productInfo = () => {
         return (
             <div className='prodInfoCont'>
-                <h1>Product Name</h1>
-                <p>Product Description</p>
-                <button>Add to Cart</button>
+                <div className='prodAddressCont'
+                >
+                    <p>Home / Earings / Iconic Earings</p>
+                </div>
+
+                <h1 className='prodTitle'>
+                    Juste un Clou Ring
+                </h1>
+                <p className='prodDesc'>
+                    Juste un Clou ring, white gold (750/1000), set with 77 brilliant-cut diamonds totaling 0.59 carat. Width: 1.8 mm (for size 52).
+                </p>
+                <p className='sizeLink'>Size Guide</p>
+                <div className='sizeCont'>
+                    <div className='priceCont'>
+                        <p>$3,000</p>
+                    </div>
+                    <div className='selectSizeCont'>
+                        <select>
+                            <option value={null}>Select Size</option>
+                            <option value="52">52 MM</option>
+                            <option value="54">54 MM</option>
+                            <option value="56">56 MM</option>
+                        </select>
+                    </div>
+                </div>
+                <div className='btnCont'>
+                    <button>
+                        Add to Cart
+                    </button>
+                </div>
             </div>
         );
     }
