@@ -1,0 +1,72 @@
+.categoryBodyCont{
+    display: flex;
+    flex-direction: column;
+    font-family: 'CustomFont', sans-serif;
+    /* background-color: rgb(244, 240, 238); */
+}
+
+.sortByComponent, .sortByOptions {
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    flex: 2;
+}
+
+.sortByComponent{
+    justify-content: space-between;
+    padding: 5px 40px;
+    margin: 0px 30px;
+    border-bottom: 2px solid rgb(244, 240, 238);
+}
+
+.sortByOptions{
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.sortByOptions p {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.sortByOptions p.active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.productCells{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 10px;
+    row-gap: 10px;
+}
+
+.productCell{
+    width: 20%;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.productCell:hover{
+    /* background-color: rgb(244, 240, 238); */
+    border: 2px solid rgb(244, 240, 238);
+    cursor: pointer;
+}
+
+.productCell img{
+    width: 100%;
+    height: auto;
+}
+
+.addcertiseCont{
+    width: 45%;
+    /* padding: 10px; */
+}
+
+.addcertiseCont img{
+    width: 100%;
+    height: auto;
+}
