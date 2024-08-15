@@ -1,10 +1,20 @@
-.landingImgCont{
+.categoryHeaderCont{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(244, 240, 238);
 }
 
-.landingImgCont img{
-    width: 100%;
+.categoryHeaderCont img{
+    width: 50%;
     height: auto;
+    flex:2
+}
+
+.category-header-text{
+    font-family: 'CustomFont', sans-serif;
+    text-align: left;
+    margin: 0px;
+    padding: 10px 100px;
+    flex: 2;
 }
