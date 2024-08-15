@@ -155,7 +155,7 @@ const CategoryBody = () => {
                         className={sortOrder === 'default' ? 'active' : ''}
                         onClick={() => handleSortChange('default')}
                     >
-                        Recomended
+                        Recommended
                     </p>
                     <p
                     className={sortOrder === 'priceLowToHigh' ? 'active' : ''}
