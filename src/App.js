@@ -1,36 +1,37 @@
 // import logo from './logo.svg';
 import './App.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './containers/HomePage';
 import ProductPage from './containers/ProductPage';
 import CategoryPage from './containers/CategoryPage';
-import {useLanguageContext} from "./context/languageContext";
 // import Root from "./routes/root";
 
 function App() {
-  const { t } = useLanguageContext();
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <HomePage />,
-    },
-    {
-      path: "/product",
-      element: <ProductPage/>,
-    },
-    {
-      path: "/category",
-      element: <CategoryPage />,
-    },
-  ]);
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <HomePage />,
+  //   },
+  //   {
+  //     path: "/product",
+  //     element: <ProductPage/>,
+  //   },
+  //   {
+  //     path: "/category",
+  //     element: <CategoryPage />,
+  //   },
+  // ]);
 
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/category" element={<CategoryPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
