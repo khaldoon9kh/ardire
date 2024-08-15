@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import HomePage from './containers/HomePage';
 import ProductPage from './containers/ProductPage';
+import CategoryPage from './containers/CategoryPage';
 import {useLanguageContext} from "./context/languageContext";
 // import Root from "./routes/root";
 
@@ -19,6 +20,10 @@ function App() {
     {
       path: "/product",
       element: <ProductPage/>,
+    },
+    {
+      path: "/category",
+      element: <CategoryPage />,
     },
   ]);
 
