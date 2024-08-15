@@ -24,6 +24,18 @@
     padding: 10px 20px;
 }
 
+.sortByOptions p {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+}
+
+.sortByOptions p.active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
 .productCells{
     display: flex;
     flex-wrap: wrap;

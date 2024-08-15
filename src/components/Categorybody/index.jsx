@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './index.css';
 import LandingImg from "../../imgs/landingImg.webp"
 import iconicEarings1 from "../../imgs/iconicEarings.png";
@@ -13,9 +13,11 @@ import iconicRing3 from '../../imgs/iconicRing3.webp';
 import Earingsv2 from '../../imgs/Earingsv2.webp';
 import ADD1 from '../../imgs/advertize1.webp';
 import ADD2 from '../../imgs/advertize2.webp';
+import { use } from 'i18next';
 
 const CategoryBody = () => {
-    
+    const [sortOrder, setSortOrder] = useState('default');
+
     const slides = [
         {
             img: iconicEarings1,
@@ -131,6 +133,8 @@ const CategoryBody = () => {
         }
     ]
 
+    const [dataList, setdataList] = useState(slides);
+
     const advertismentSlides = [
         {
             img:ADD1,
@@ -147,10 +151,36 @@ const CategoryBody = () => {
             <div className="sortByComponent">
                 <h1>Sort By:</h1>
                 <div className="sortByOptions">
-                    <p>Price: Low to High</p>
-                    <p>Price: High to Low</p>
-                    <p>Alphabetical: A-Z</p>
-                    <p>Alphabetical: Z-A</p>
+                    <p
+                        className={sortOrder === 'default' ? 'active' : ''}
+                        onClick={() => handleSortChange('default')}
+                    >
+                        Recomended
+                    </p>
+                    <p
+                    className={sortOrder === 'priceLowToHigh' ? 'active' : ''}
+                    onClick={() => handleSortChange('priceLowToHigh')}
+                    >
+                        Price: Low to High
+                    </p>
+                    <p
+                        className={sortOrder === 'priceHighToLow' ? 'active' : ''}
+                        onClick={() => handleSortChange('priceHighToLow')}
+                    >
+                        Price: High to Low
+                    </p>
+                    <p
+                        className={sortOrder === 'alphabeticalAZ' ? 'active' : ''}
+                        onClick={() => handleSortChange('alphabeticalAZ')}
+                    >
+                        Alphabetical: A-Z
+                    </p>
+                    <p
+                        className={sortOrder === 'alphabeticalZA' ? 'active' : ''}
+                        onClick={() => handleSortChange('alphabeticalZA')}
+                    >
+                        Alphabetical: Z-A
+                    </p>
                 </div>
             </div>
         )
@@ -178,11 +208,36 @@ const CategoryBody = () => {
         )
     }
 
+    const sortSlides = (slides, order) => {
+        if (order === 'priceLowToHigh') {
+            setdataList(slides.sort((a, b) => a.price - b.price));
+            // return slides.sort((a, b) => a.price - b.price);
+        } else if (order === 'priceHighToLow') {
+            setdataList(slides.sort((a, b) => b.price - a.price));
+            // return slides.sort((a, b) => b.price - a.price);
+        } else if (order === 'alphabeticalAZ') {
+            setdataList(slides.sort((a, b) => a.title.localeCompare(b.title)));
+        } else if (order === 'alphabeticalZA') {
+            setdataList(slides.sort((a, b) => b.title.localeCompare(a.title)));
+        } else {
+            setdataList(slides);
+        }
+    }
+
+    const handleSortChange = (order) => {
+        setSortOrder(order);
+    }
+
+    useEffect(() => {
+        sortSlides([...slides], sortOrder);
+    }
+    , [sortOrder]);
+
     return (
         <div className='categoryBodyCont'>
             {sortByComponent()}
             <div className='productCells'>
-                {slides.map((slide, index) => {
+                {dataList.map((slide, index) => {
                     if (index === 4 || index === 12) {
                         return (
                             <>
