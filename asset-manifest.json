@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/ardire/static/css/main.69bb1421.css",
-    "main.js": "/ardire/static/js/main.e9b54f7a.js",
+    "main.css": "/ardire/static/css/main.501c4cd1.css",
+    "main.js": "/ardire/static/js/main.c0c8a8a1.js",
     "static/js/453.f1ddcdc0.chunk.js": "/ardire/static/js/453.f1ddcdc0.chunk.js",
     "static/media/discriptionImg.webp": "/ardire/static/media/discriptionImg.4ce44ca875c385d924e0.webp",
     "static/media/landingImg.webp": "/ardire/static/media/landingImg.9bc7e51ff2551cb4258b.webp",
     "static/media/Chronicle-Display-Roman.otf": "/ardire/static/media/Chronicle-Display-Roman.abfcdb14bb9b84b8bbdb.otf",
     "static/media/logo.png": "/ardire/static/media/logo.fe061ca5d79186c491f5.png",
     "static/media/aboutUs.webp": "/ardire/static/media/aboutUs.df131c097a7dca0be179.webp",
+    "static/media/advertize1.webp": "/ardire/static/media/advertize1.415a9c1d5b5f073cad76.webp",
     "static/media/bracelets.png": "/ardire/static/media/bracelets.b3cf9039adcd954f710a.png",
     "static/media/rings.png": "/ardire/static/media/rings.b23ea7e634a91c75fa4c.png",
     "static/media/iconicRing1.png": "/ardire/static/media/iconicRing1.76a6e9665335d424960c.png",
     "static/media/iconicEarings.png": "/ardire/static/media/iconicEarings.b37e947dda336bdef8b1.png",
     "static/media/iconicNecklace2.webp": "/ardire/static/media/iconicNecklace2.caba847c150540457bd8.webp",
     "static/media/earings.png": "/ardire/static/media/earings.976a0b8b8e4de1b3f346.png",
+    "static/media/advertize2.webp": "/ardire/static/media/advertize2.9c2a800ed21e071ecd2a.webp",
     "static/media/iconicRing2.webp": "/ardire/static/media/iconicRing2.2298a20a8f2c6864e7fe.webp",
     "static/media/nechlase.png": "/ardire/static/media/nechlase.f65bba60193f47737dd9.png",
     "static/media/iconicEarings2.webp": "/ardire/static/media/iconicEarings2.5d17bd2cdebf51b63055.webp",
@@ -31,12 +33,12 @@
     "static/media/secureCard.svg": "/ardire/static/media/secureCard.4f83339f8d49713725d855af866151f4.svg",
     "index.html": "/ardire/index.html",
     "static/media/twitter.svg": "/ardire/static/media/twitter.592fc7d946484441fd909ae9dbb6d4a0.svg",
-    "main.69bb1421.css.map": "/ardire/static/css/main.69bb1421.css.map",
-    "main.e9b54f7a.js.map": "/ardire/static/js/main.e9b54f7a.js.map",
+    "main.501c4cd1.css.map": "/ardire/static/css/main.501c4cd1.css.map",
+    "main.c0c8a8a1.js.map": "/ardire/static/js/main.c0c8a8a1.js.map",
     "453.f1ddcdc0.chunk.js.map": "/ardire/static/js/453.f1ddcdc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69bb1421.css",
-    "static/js/main.e9b54f7a.js"
+    "static/css/main.501c4cd1.css",
+    "static/js/main.c0c8a8a1.js"
   ]
 }
