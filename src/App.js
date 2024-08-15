@@ -8,11 +8,9 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter 
-        basename='/ardire'
-      >
+      <BrowserRouter>
         <Routes>
-          <Route exact path="/ardire" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/category" element={<CategoryPage />} />
         </Routes>
