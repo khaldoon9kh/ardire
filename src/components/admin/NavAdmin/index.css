@@ -1,0 +1,26 @@
+.navbarCont{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px 18px 0px;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items div{
+    margin: 0px 20px;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 2px;
+}
+
+.logoCont{
+    margin-bottom: 18px;
+}
+
+
+.logoImg {
+    height: 100px;
+}

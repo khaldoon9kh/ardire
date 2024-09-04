@@ -4,6 +4,7 @@ import HomePage from './containers/HomePage';
 import ProductPage from './containers/ProductPage';
 import CategoryPage from './containers/CategoryPage';
 import LoginPage from './containers/AdminLogin';
+import AdminDash from './containers/AdminDash';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/product" element={<ProductPage />} />
           <Route path="/category" element={<CategoryPage />} />
           <Route path="/admin" element={<LoginPage />} />
+          <Route path="/admin/dash" element={<AdminDash />} />
         </Routes>
       </BrowserRouter>
     </div>
