@@ -26,13 +26,13 @@ const CatSection = () => {
     ];
     return (
         <div className='categorySec'>
-            <div className='catHeaderCont'>
+            <div className='landingcatHeaderCont'>
                 <h1>Shop by Category</h1>
                 <p>Brilliant design and unparalleled craftsmanship.</p>
             </div>
-            <div className='catItemsCont'>
+            <div className='landingcatItemsCont'>
             {catItems.map((item, index) => (
-                <div className='catItem' key={index}>
+                <div className='landingcatItem' key={index}>
                     <img src={item.img} alt={item.title} />
                     <p>{item.title}</p>
                 </div>
