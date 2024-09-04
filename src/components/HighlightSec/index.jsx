@@ -62,7 +62,7 @@ const HighlightSec = () => {
 
     return (
         <div className='highlightSec'>
-            <div className='catHeaderCont'>
+            <div className='highlightHeaderCont'>
                 <h1>The Ardire Icons</h1>
                 <p>Modern jewels that defy the decades</p>
             </div>
@@ -71,7 +71,7 @@ const HighlightSec = () => {
                 navigation={true} 
                 modules={[Navigation]} 
                 className="mySwiper"
-                slidesPerView={3}
+                slidesPerView={window.innerWidth < 768 ? 1 : 3} // Change value to 1 for mobile devices
                 loop={true}
             >
                 {slides.map((slide, index) => (
