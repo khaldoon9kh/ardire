@@ -43,6 +43,9 @@
         margin: 20px 0px;
         font-family: 'CustomFont', sans-serif;
     }
+    .mySwiper .swiper-pagination{
+        display: none;
+    }
     
 }
 
@@ -87,6 +90,14 @@
         text-align: center;
         margin: 20px 0px;
         font-family: 'CustomFont', sans-serif;
+    }
+
+    .mySwiper .swiper-pagination{
+        bottom: 5px;
+    }
+
+    .mySwiper .swiper-pagination-bullet{
+        background-color: #000;
     }
     
 }
