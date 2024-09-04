@@ -13,7 +13,7 @@ const HomePage = () => {
             <div className="homePage">
                 <NavBar />
                 <LandingPage />
-                <CatSection />
+                {/* <CatSection /> */}
                 <HighlightSec />
                 <AboutUsSec />
                 <InstaSec />

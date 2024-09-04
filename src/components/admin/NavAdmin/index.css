@@ -1,26 +1,26 @@
-.navbarCont{
+.adminnavbarCont{
     display: flex;
     flex-direction: column;
     padding: 16px 0px 18px 0px;
 }
 
-.nav-items{
+.adminnav-items{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-items div{
+.adminnav-items div{
     margin: 0px 20px;
     font-family: 'CustomFont', sans-serif;
     letter-spacing: 2px;
 }
 
-.logoCont{
+.adminlogoCont{
     margin-bottom: 18px;
 }
 
 
-.logoImg {
+.adminlogoImg {
     height: 100px;
 }
