@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Logo from '../../imgs/logo.png';
 import './index.css';
 import {auth} from '../../firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -23,12 +24,16 @@ const LoginPage = () => {
             console.log(user);
         }
         catch (error) {
+            alert("The email or password you entered is incorrect.");
             console.log(error);
         }
     }
 
     return (
         <div className="loginPage">
+            <div className="logoCont">
+                <img src={Logo} alt="Logo" className='logoImg' />
+            </div>
             <div className="loginContainer">
                 <h2 className="loginTitle">Login</h2>
                 <form className="loginForm">
@@ -40,6 +45,7 @@ const LoginPage = () => {
                         <label htmlFor="password" className="inputLabel">Password</label>
                         <input type="password" id="password" className="inputField" value={password} onChange={handlePasswordChange} />
                     </div>
+                    <a className="forgetPassword">Forget Password?</a>
                     <button 
                         type="submit" 
                         className="loginButton"

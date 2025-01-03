@@ -18,6 +18,11 @@
         font-size: 1.25rem; /* Adjust font size for laptop */
     }
 
+    .landingcatItem a {
+        text-decoration: none;
+        color: black;
+    }
+
     .landingcatItem img {
         width: 250px; /* Adjust image size for laptop */
         height: 250px;

@@ -4,6 +4,7 @@ import Earings from '../../imgs/earings.png';
 import Bracelets from '../../imgs/bracelets.png';
 import Rings from '../../imgs/rings.png';
 import Necklaces from '../../imgs/nechlase.png';
+import { Link } from 'react-router-dom';
 
 const CatSection = () => {
     const catItems = [
@@ -33,8 +34,10 @@ const CatSection = () => {
             <div className='landingcatItemsCont'>
             {catItems.map((item, index) => (
                 <div className='landingcatItem' key={index}>
-                    <img src={item.img} alt={item.title} />
-                    <p>{item.title}</p>
+                    <Link to="/category">
+                        <img src={item.img} alt={item.title} />
+                        <p>{item.title}</p>
+                    </Link>
                 </div>
             ))}
             </div>

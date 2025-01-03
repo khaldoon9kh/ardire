@@ -43,6 +43,11 @@
         margin: 20px 0px;
         font-family: 'CustomFont', sans-serif;
     }
+
+    .slideCont a {
+        color: black;
+        text-decoration: none;
+    }
     .mySwiper .swiper-pagination{
         display: none;
     }

@@ -16,6 +16,7 @@ import iconicRing2 from '../../imgs/iconicRing2.webp';
 import iconicRing3 from '../../imgs/iconicRing3.webp';
 import Earingsv2 from '../../imgs/Earingsv2.webp' 
 import { click } from '@testing-library/user-event/dist/click';
+import { Link } from 'react-router-dom';
 
 const HighlightSec = () => {
 
@@ -80,8 +81,10 @@ const HighlightSec = () => {
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div className='slideCont'>
-                            <img src={slide.img} alt={slide.title} />
-                            <p>{slide.title}</p>
+                            <Link to="/product">
+                                <img src={slide.img} alt={slide.title} />
+                                <p>{slide.title}</p>
+                            </Link>
                         </div>
                     </SwiperSlide>
                 ))}
