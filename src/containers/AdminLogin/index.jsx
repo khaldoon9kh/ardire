@@ -22,6 +22,7 @@ const LoginPage = () => {
             const userCredential = await signInWithEmailAndPassword(auth, username, password);
             const user = userCredential.user;
             console.log(user);
+            window.location.href = '/admin/dash';
         }
         catch (error) {
             alert("The email or password you entered is incorrect.");
@@ -39,7 +40,7 @@ const LoginPage = () => {
                 <form className="loginForm">
                     <div className="inputGroup">
                         <label htmlFor="username" className="inputLabel">Username</label>
-                        <input type="text" id="username" className="inputField" value={username} onChange={handleUsernameChange} />
+                        <input type="email" id="username" className="inputField" value={username} onChange={handleUsernameChange} />
                     </div>
                     <div className="inputGroup">
                         <label htmlFor="password" className="inputLabel">Password</label>
