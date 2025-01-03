@@ -18,6 +18,11 @@
         /* background-color: blue; */
     }
 
+    .nav-items div a {
+        text-decoration: none;
+        color: black;
+    }
+
     .logoCont {
         margin-bottom: 10px;
     }
@@ -46,6 +51,11 @@
         font-size: 24px; 
         font-family: 'CustomFont', sans-serif;
         letter-spacing: 2px;
+    }
+
+    .nav-items div a {
+        text-decoration: none;
+        color: black;
     }
     
     .logoCont{
