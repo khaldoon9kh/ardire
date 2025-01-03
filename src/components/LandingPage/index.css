@@ -1,10 +1,29 @@
-.landingImgCont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .landingImgCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landingImgCont img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.landingImgCont img{
-    width: 100%;
-    height: auto;
+/* Media query for laptops */
+@media (min-width: 768px) {
+    .landingImgCont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landingImgCont img {
+        width: 100%;
+        height: auto;
+    }
 }

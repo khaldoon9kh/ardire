@@ -69,8 +69,8 @@ const InstaSec = () => {
             <Swiper 
                 navigation={true} 
                 modules={[Navigation]} 
-                className="mySwiper"
-                slidesPerView={4}
+                className="instaSwiper"
+                slidesPerView={window.innerWidth < 768 ? 1 : 4} // Change value to 1 for mobile devices
                 loop={true}
             >
                 {slides.map((slide, index) => (

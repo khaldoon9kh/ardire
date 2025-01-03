@@ -50,6 +50,11 @@
     border: 2px solid transparent;
 }
 
+.productCell a{
+    text-decoration: none;
+    color: black;
+}
+
 .productCell:hover{
     /* background-color: rgb(244, 240, 238); */
     border: 2px solid rgb(244, 240, 238);

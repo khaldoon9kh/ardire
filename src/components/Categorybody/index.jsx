@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 import LandingImg from "../../imgs/landingImg.webp"
 import iconicEarings1 from "../../imgs/iconicEarings.png";
@@ -189,11 +190,13 @@ const CategoryBody = () => {
     const productCell = (slide) => {
         return (
             <div className='productCell'>
-                <img src={slide.img} alt={slide.title} />
-                <h3>{slide.title}</h3>
-                <p className='materialText'>{slide.materialType}</p>
-                <p className='prodPriceText'>${slide.price}</p>
-            </div>
+                    <Link to="/product">
+                    <img src={slide.img} alt={slide.title} />
+                    <h3>{slide.title}</h3>
+                    <p className='materialText'>{slide.materialType}</p>
+                    <p className='prodPriceText'>${slide.price}</p>
+                    </Link>
+                </div>
         )
     }
 

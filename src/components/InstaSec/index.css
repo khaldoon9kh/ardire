@@ -1,54 +1,86 @@
-.InstaSec{
-    margin: 20px 0px;
-    padding: 10px 0px;
-    font-family: 'CustomFont', sans-serif;
-    /* background-color: #f8f8f8; */
-    
-}
-.catHeaderCont{
-    font-family: 'CustomFont', sans-serif;
+/* Laptop breakpoint */
+@media (min-width: 769px) {
+    .InstaSec{
+        margin: 20px 0px;
+        padding: 10px 0px;
+        font-family: 'CustomFont', sans-serif;
+        /* background-color: #f8f8f8; */
+        
+    }
+    .catHeaderCont{
+        font-family: 'CustomFont', sans-serif;
+    }
+
+    .catHeaderCont h1{
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .catHeaderCont p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+
+    .instaslideCont{
+        /* width: 90%; */
+        margin: 0 auto;
+        font-size: 1.5rem;
+        /* background-color: #f8f8f8; */
+    }
+
+    .instaslideCont img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        /* margin: 0px 10px; */
+        color: black;
+    }
+
+    .slideCont p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 20px 0px;
+        font-family: 'CustomFont', sans-serif;
+    }
 }
 
-.catHeaderCont h1{
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0px;
-}
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    .instaSwiper{
+        /* background-color: blue; */
+        height: 100%;
+    }
+    .InstaSec{
+        margin: 20px 0px;
+        padding: 10px 0px;
+        font-family: 'CustomFont', sans-serif;
+        /* background-color: #f8f8f8; */
+        
+    }
+    .catHeaderCont{
+        font-family: 'CustomFont', sans-serif;
+    }
 
-.catHeaderCont p{
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 20px 0px;
-}
+    .catHeaderCont h1{
+        font-family: 'CustomFont', sans-serif;
+        margin: 20px 0px;
+        text-align: center;
+    }
 
+    .catHeaderCont p{
+        font-size: 1rem;
+        text-align: center;
+        margin: 20px 0px;
+    }
 
-.instaslideCont{
-    /* width: 90%; */
-    margin: 0 auto;
-    font-size: 1.5rem;
-    /* background-color: #f8f8f8; */
-}
+    .instaslideCont img{
+        width: 250px;
+        height: 250px;
+    }
 
-.instaslideCont img{
-    width: 250px;
-    height: 250px;
-}
-
-.swiper-button-prev, .swiper-button-next{
-    /* margin: 0px 10px; */
-    color: black;
-}
-
-/* .swiper-button-next{
-    right: 0px;
-}
-.swiper-button-prev{
-    left: 0px;
-} */
-
-.slideCont p{
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 20px 0px;
-    font-family: 'CustomFont', sans-serif;
 }

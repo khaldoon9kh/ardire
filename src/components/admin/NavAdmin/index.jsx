@@ -4,13 +4,13 @@ import './index.css';
 
 const NavAdmin = () => {
     return (
-        <div className='navbarCont'>
-            <div className="logoCont">
-                <img src={Logo} alt="Logo" className='logoImg' />
+        <div className='adminnavbarCont'>
+            <div className="adminlogoCont">
+                <img src={Logo} alt="Logo" className='adminlogoImg' />
             </div>
-            <div className="nav-items">
-                <button className="logoutBtn">Logout</button>
-                <div className="userIcon"></div>
+            <div className="adminnav-items">
+                <button className="adminlogoutBtn">Logout</button>
+                <div className="adminuserIcon"></div>
             </div>
         </div>
     );

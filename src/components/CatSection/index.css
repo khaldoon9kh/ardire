@@ -1,42 +1,76 @@
-.catHeaderCont{
+.landingcatHeaderCont{
     font-family: 'CustomFont', sans-serif;
 }
 
-.catHeaderCont h1{
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0px;
-    font-weight: 250;
+/* Breakpoint for laptop screens */
+@media (min-width: 769px){
+    .landingcatItemsCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: 'CustomFont', sans-serif;
+    }
+    .landingcatHeaderCont h1 {
+        font-size: 2rem; /* Adjust font size for laptop */
+    }
+
+    .landingcatHeaderCont p {
+        font-size: 1.25rem; /* Adjust font size for laptop */
+    }
+
+    .landingcatItem a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .landingcatItem img {
+        width: 250px; /* Adjust image size for laptop */
+        height: 250px;
+    }
+
+    .landingcatItem p {
+        font-size: 1.25rem; /* Adjust text size for laptop */
+    }
 }
 
-.catHeaderCont p{
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 20px 0px;
-}
+/* Breakpoint for mobile devices */
+@media (max-width: 768px) {
+    .landingcatHeaderCont {
+        background-color: #f8f8f8;
+        padding: 20px 0px;
+    }
+    .landingcatHeaderCont h1 {
+        font-size: 1.25rem; /* Adjust font size for mobile */
+        /* background-color: blueviolet; */
+    }
 
+    .landingcatHeaderCont p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
 
-.catItemsCont{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* background-color: blue; */
-    /* width: 100vw; */
-}
+    .landingcatItemsCont {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center;
+    }
 
-.catItem{
-    margin: 0px 10px;
-    font-family: 'CustomFont', sans-serif;
-    letter-spacing: 2px;
-}
+    .landingcatItem {
+        margin: 10px 0px; /* Adjust margin for mobile */
+        background-color: rgb(244, 240, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+    }
 
-.catItem img{
-    width: 300px;
-    height: 300px;
-}
+    .landingcatItem img {
+        width: 225px; /* Adjust image size for mobile */
+        height: 225px;
+    }
 
-.catItem p{
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 5px 0px;
+    .landingcatItem p {
+        position: absolute;
+        font-size: 1rem; /* Adjust text size for mobile */
+        font-family: 'CustomFont', sans-serif;
+    }
 }
